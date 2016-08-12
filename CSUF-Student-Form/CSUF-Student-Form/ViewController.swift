@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CSUF-Student-Form
 //
-//  Created by Bruno Venegas on 8/11/16.
+//  Created by Raymundo Venegas on 8/11/16.
 //  Copyright © 2016 California State University, Fullerton. All rights reserved.
 //
 
