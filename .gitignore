@@ -63,3 +63,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+# DS_Store is annoying file stuff from apple.  no need to keep this in the repo
+
+.DS_Store
+*.DS_Store
+*.pbxproj
