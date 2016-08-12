@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Hello, world!");
+        
+        Model.setDummyData()
+        Model.loadDummyData()
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
