@@ -50,11 +50,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="programsOfStudyLabel" text="Interested Programs of Study (Check All That Apply)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-hD-WRL" userLabel="programsOfStudyLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="programsOfStudyLabel" text="Interested Programs of Study (Check All That Apply)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-hD-WRL" userLabel="programsOfStudyLabel">
                                 <rect key="frame" x="20" y="188" width="400" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="188" width="360" height="45"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="majorOfStudyLabel" text="Interested Majors of Study:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-V4-Wdg" userLabel="majorOfStudyLabel">
                                 <rect key="frame" x="20" y="336" width="207" height="21"/>
@@ -76,9 +79,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="63O-JM-moD" id="0sS-PG-3CP"/>
+                        <outlet property="firstNameTextField" destination="hsR-Tg-kUE" id="YjO-WN-0FM"/>
+                        <outlet property="lastNameTextField" destination="gpc-zw-ZsV" id="HTd-Ys-fYP"/>
+                        <outlet property="majorTextField" destination="fjL-Da-dV4" id="iGn-Vj-tI3"/>
+                        <outlet property="programsOfStudyLabel" destination="g7C-hD-WRL" id="ARV-65-bfl"/>
+                        <outlet property="startTermLabel" destination="jTJ-uw-Gfb" id="JiM-Px-A9N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="205.5" y="281.25"/>
         </scene>
     </scenes>
 </document>
