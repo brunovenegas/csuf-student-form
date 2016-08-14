@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="firstNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsR-Tg-kUE" userLabel="firstNameTextField">
-                                <rect key="frame" x="126" y="24" width="97" height="30"/>
+                                <rect key="frame" x="126" y="24" width="211" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lastNameTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-zw-ZsV" userLabel="lastNameTextField">
-                                <rect key="frame" x="126" y="77" width="97" height="30"/>
+                                <rect key="frame" x="126" y="77" width="211" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -46,12 +46,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="emailTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63O-JM-moD" userLabel="emailTextField">
-                                <rect key="frame" x="126" y="128" width="97" height="30"/>
+                                <rect key="frame" x="126" y="128" width="211" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="programsOfStudyLabel" text="Interested Programs of Study (Check All That Apply)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-hD-WRL" userLabel="programsOfStudyLabel">
-                                <rect key="frame" x="20" y="188" width="400" height="21"/>
+                                <rect key="frame" x="20" y="173" width="400" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,37 +60,180 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="majorOfStudyLabel" text="Interested Majors of Study:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-V4-Wdg" userLabel="majorOfStudyLabel">
-                                <rect key="frame" x="20" y="336" width="207" height="21"/>
+                                <rect key="frame" x="20" y="351" width="207" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="389" width="207" height="21"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="majorOfStudyTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjL-Da-dV4" userLabel="majorOfStudyTextField">
-                                <rect key="frame" x="259" y="332" width="97" height="30"/>
+                                <rect key="frame" x="252" y="348" width="182" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="242" y="386" width="131" height="30"/>
+                                </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="expectedStartTermLabel" text="Expected Program Start Term (Select One) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-uw-Gfb" userLabel="expectedStartTermLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensive English Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b08-5k-aC5">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="235" width="198" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undergraduate (Bacherlor's Degree)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-E7-5zT">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="266" width="278" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graduate (Master's/Doctorate Degree)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd8-7f-1L0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="295" width="294" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Program" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pha-uv-5nL">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="324" width="134" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efE-uU-Bgt">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="351" width="44" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="englishProgramCheckbox" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgZ-nK-e8d" userLabel="englishProgramCheckbox">
+                                <rect key="frame" x="20" y="202" width="46" height="30"/>
+                                <state key="normal" title="englishProgramCheckbox" image="uncheckedbox"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="237" width="18" height="18"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOO-9T-okQ" userLabel="undergraduateCheckbox">
+                                <rect key="frame" x="20" y="202" width="46" height="30"/>
+                                <state key="normal" title="undergraduateCheckbox" image="uncheckedbox"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="268" width="18" height="18"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KV-gf-Hea" userLabel="graduateCheckbox">
+                                <rect key="frame" x="20" y="202" width="46" height="30"/>
+                                <state key="normal" image="uncheckedbox"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="297" width="18" height="18"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-dN-wVG" userLabel="summerProgramCheckbox">
+                                <rect key="frame" x="20" y="202" width="46" height="30"/>
+                                <state key="normal" image="uncheckedbox"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="326" width="18" height="18"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym1-Yn-NbW" userLabel="otherCheckbox">
+                                <rect key="frame" x="20" y="202" width="46" height="30"/>
+                                <state key="normal" image="uncheckedbox"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="352" width="18" height="18"/>
+                                </variation>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neE-DW-RRc">
+                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="453" width="400" height="147"/>
+                                </variation>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="expectedStartTermLabel" text="Expected Program Start Term: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTJ-uw-Gfb" userLabel="expectedStartTermLabel">
                                 <rect key="frame" x="20" y="400" width="332" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="424" width="237" height="21"/>
+                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-5m-fLV" userLabel="saveButton">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="608" width="34" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="b08-5k-aC5"/>
+                                <exclude reference="tyn-E7-5zT"/>
+                                <exclude reference="yd8-7f-1L0"/>
+                                <exclude reference="pha-uv-5nL"/>
+                                <exclude reference="efE-uU-Bgt"/>
+                                <exclude reference="kOO-9T-okQ"/>
+                                <exclude reference="4KV-gf-Hea"/>
+                                <exclude reference="6sK-dN-wVG"/>
+                                <exclude reference="ym1-Yn-NbW"/>
+                                <exclude reference="neE-DW-RRc"/>
+                                <exclude reference="T6B-5m-fLV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="b08-5k-aC5"/>
+                                <include reference="tyn-E7-5zT"/>
+                                <include reference="yd8-7f-1L0"/>
+                                <include reference="pha-uv-5nL"/>
+                                <include reference="efE-uU-Bgt"/>
+                                <include reference="kOO-9T-okQ"/>
+                                <include reference="4KV-gf-Hea"/>
+                                <include reference="6sK-dN-wVG"/>
+                                <include reference="ym1-Yn-NbW"/>
+                                <include reference="neE-DW-RRc"/>
+                                <include reference="T6B-5m-fLV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="63O-JM-moD" id="0sS-PG-3CP"/>
                         <outlet property="firstNameTextField" destination="hsR-Tg-kUE" id="YjO-WN-0FM"/>
+                        <outlet property="graduateCheckbox" destination="4KV-gf-Hea" id="Ape-Js-83E"/>
+                        <outlet property="intensiveEnglishCheckbox" destination="EgZ-nK-e8d" id="5LN-kO-Lwc"/>
                         <outlet property="lastNameTextField" destination="gpc-zw-ZsV" id="HTd-Ys-fYP"/>
                         <outlet property="majorTextField" destination="fjL-Da-dV4" id="iGn-Vj-tI3"/>
+                        <outlet property="otherCheckbox" destination="ym1-Yn-NbW" id="eY7-Kr-3vN"/>
                         <outlet property="programsOfStudyLabel" destination="g7C-hD-WRL" id="ARV-65-bfl"/>
+                        <outlet property="saveButton" destination="T6B-5m-fLV" id="Pca-WC-iPA"/>
                         <outlet property="startTermLabel" destination="jTJ-uw-Gfb" id="JiM-Px-A9N"/>
+                        <outlet property="startTermPickerView" destination="neE-DW-RRc" id="vTn-Ee-KMX"/>
+                        <outlet property="summerProgramCheckbox" destination="6sK-dN-wVG" id="djL-kX-lFx"/>
+                        <outlet property="undergraduateCheckbox" destination="kOO-9T-okQ" id="HCb-h4-1Rz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="205.5" y="281.25"/>
+            <point key="canvasLocation" x="204" y="280.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="uncheckedbox" width="626" height="626"/>
+    </resources>
 </document>
