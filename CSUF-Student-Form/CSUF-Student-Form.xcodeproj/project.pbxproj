@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150B3AEB1D60E26200884440 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B3AEA1D60E26200884440 /* DataEntry.swift */; };
+		150B3AED1D60E26E00884440 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B3AEC1D60E26E00884440 /* Model.swift */; };
 		1529055D1D5D5DE00062E10D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1529055C1D5D5DE00062E10D /* AppDelegate.swift */; };
 		1529055F1D5D5DE00062E10D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1529055E1D5D5DE00062E10D /* ViewController.swift */; };
 		152905621D5D5DE00062E10D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152905601D5D5DE00062E10D /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150B3AEA1D60E26200884440 /* DataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
+		150B3AEC1D60E26E00884440 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		152905591D5D5DE00062E10D /* CSUF-Student-Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSUF-Student-Form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1529055C1D5D5DE00062E10D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1529055E1D5D5DE00062E10D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				152905631D5D5DE00062E10D /* Assets.xcassets */,
 				152905651D5D5DE00062E10D /* LaunchScreen.storyboard */,
 				152905681D5D5DE00062E10D /* Info.plist */,
+				150B3AEA1D60E26200884440 /* DataEntry.swift */,
+				150B3AEC1D60E26E00884440 /* Model.swift */,
 			);
 			path = "CSUF-Student-Form";
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150B3AEB1D60E26200884440 /* DataEntry.swift in Sources */,
 				1529055F1D5D5DE00062E10D /* ViewController.swift in Sources */,
 				1529055D1D5D5DE00062E10D /* AppDelegate.swift in Sources */,
+				150B3AED1D60E26E00884440 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +495,7 @@
 				152905831D5D5DE10062E10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		152905841D5D5DE10062E10D /* Build configuration list for PBXNativeTarget "CSUF-Student-FormTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				152905861D5D5DE10062E10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		152905871D5D5DE10062E10D /* Build configuration list for PBXNativeTarget "CSUF-Student-FormUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				152905891D5D5DE10062E10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

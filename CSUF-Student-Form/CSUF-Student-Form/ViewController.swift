@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         initializeVariables();
+       
+        Model.setDummyData()
+        Model.loadDummyData()
         
         print("Hello, world!");
     }
