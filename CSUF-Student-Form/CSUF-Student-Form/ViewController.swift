@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     //Picker View
     @IBOutlet var startTermPickerView: UIPickerView!
     let pickerViewData = ["Spring 2017", "Summer 2017", "Fall 2017",
-                          "Spring 2018", "Summer 2018", "Fall 2018", "Other"]
+                          "Spring 2018", "Summer 2018", "Fall 2018", "Later"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
