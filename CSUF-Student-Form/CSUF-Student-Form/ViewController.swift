@@ -27,10 +27,21 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet var otherCheckbox: UIButton!
     @IBOutlet var saveButton: UIButton!
     
-    //Picker View
+    // Checkbox booleans
+    var englishBool: Bool = false
+    var undergradBool: Bool = false
+    var graduateBool: Bool = false
+    var summerBool: Bool = false
+    var otherBool: Bool = false
+    
+    // Picker View
     @IBOutlet var startTermPickerView: UIPickerView!
     let pickerViewData = ["Spring 2017", "Summer 2017", "Fall 2017",
                           "Spring 2018", "Summer 2018", "Fall 2018", "Later"]
+    
+    // Resources
+    let checkedImage = UIImage(named: "checkedbox")! as UIImage
+    let uncheckedImage = UIImage(named: "uncheckedbox")! as UIImage
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,19 +59,89 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func initializeVariables() {
-        //  programsOfStudyLabel.lineBreakMode = .ByWordWrapping;
-        //  programsOfStudyLabel.numberOfLines = 0;
         startTermPickerView.dataSource = self;
         startTermPickerView.delegate = self;
+        
+        // Display e-mail friendly keyboard
+        emailTextField.keyboardType = UIKeyboardType.EmailAddress
         
         //Looks for single or multiple taps in view
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        intensiveEnglishCheckbox.setImage(UIImage(named: "uncheckedbox.png"), forState: .Normal)
-        intensiveEnglishCheckbox.setImage(UIImage(named: "checkedbox.png"), forState: .Selected)
-        
+        // Button/Checkbox targets
+        setButtonTargets()
     
+    }
+    
+    func setButtonTargets() {
+        intensiveEnglishCheckbox.addTarget(self, action: #selector(ViewController.checkboxPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        undergraduateCheckbox.addTarget(self, action: #selector(ViewController.checkboxPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        graduateCheckbox.addTarget(self, action: #selector(ViewController.checkboxPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        summerProgramCheckbox.addTarget(self, action: #selector(ViewController.checkboxPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        otherCheckbox.addTarget(self, action: #selector(ViewController.checkboxPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        saveButton.addTarget(self, action: #selector(ViewController.checkboxPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    
+    func checkboxPressed(sender: UIButton!) {
+        
+        if(sender == intensiveEnglishCheckbox) {
+            if(englishBool == true) {
+                englishBool = false
+                intensiveEnglishCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
+            }
+            else if(englishBool == false) {
+                englishBool = true
+                intensiveEnglishCheckbox.setImage(checkedImage, forState: UIControlState.Normal)
+            }
+        }
+        else if(sender == undergraduateCheckbox) {
+            if(undergradBool == true) {
+                undergradBool = false
+                undergraduateCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
+            }
+            else if(undergradBool == false) {
+                undergradBool = true
+                undergraduateCheckbox.setImage(checkedImage, forState: UIControlState.Normal)
+            }
+        }
+        else if(sender == graduateCheckbox) {
+            if(graduateBool == true) {
+                graduateBool = false
+                graduateCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
+            }
+            else if(graduateBool == false) {
+                graduateBool = true
+                graduateCheckbox.setImage(checkedImage, forState: UIControlState.Normal)
+            }
+        }
+        else if(sender == summerProgramCheckbox) {
+            if(summerBool == true) {
+                summerBool = false
+                summerProgramCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
+            }
+            else if(summerBool == false) {
+                summerBool = true
+                summerProgramCheckbox.setImage(checkedImage, forState: UIControlState.Normal)
+            }
+        }
+        else if(sender == otherCheckbox) {
+            if(otherBool == true) {
+                otherBool = false
+                otherCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
+            }
+            else if(otherBool == false) {
+                otherBool = true
+                otherCheckbox.setImage(checkedImage, forState: UIControlState.Normal)
+            }
+        }
+        else if(sender == saveButton) {
+            // Save all data and clear everything
+        }
+        else {
+            print("WTF are we doing in here?")
+            print("I'm tiny Rick, I don't give a fuck!")
+        }
     }
     
     // dismissKeyboard called after tap
