@@ -38,10 +38,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet var startTermPickerView: UIPickerView!
     let pickerViewData = ["Spring 2017", "Summer 2017", "Fall 2017",
                           "Spring 2018", "Summer 2018", "Fall 2018", "Later"]
+    var selectedTermString: String = ""
     
     // Resources
     let checkedImage = UIImage(named: "checkedbox")! as UIImage
     let uncheckedImage = UIImage(named: "uncheckedbox")! as UIImage
+    
+    // Data Entry
+    var newDataEntry: [DataEntry] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,6 +141,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         else if(sender == saveButton) {
             // Save all data and clear everything
+        //    newDataEntry.append(<#T##newElement: Element##Element#>)
+            print(firstNameTextField.text)
+            print(lastNameTextField.text)
+            print(emailTextField.text)
+            print(summerBool.boolValue)
+            print(undergradBool.boolValue)
+            print(graduateBool.boolValue)
+            print(summerBool.boolValue)
+            print(otherBool.boolValue)
+            print(majorTextField.text)
+            print(selectedTermString)
         }
         else {
             print("WTF are we doing in here?")
@@ -167,6 +182,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     // Data
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerViewData[row]
+    }
+    
+    // Selected Row
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedTermString = pickerViewData[row]
     }
 
 
