@@ -88,6 +88,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         // Button/Checkbox targets
         setButtonTargets()
+        
+        startTermPickerView.selectRow(0, inComponent: 0, animated: true)
+        startTermPickerView.reloadAllComponents()
+        selectedTermString = pickerViewData[startTermPickerView.selectedRowInComponent(0)]
     
     }
     
@@ -250,6 +254,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         graduateCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
         summerProgramCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
         otherCheckbox.setImage(uncheckedImage, forState: UIControlState.Normal)
+        startTermPickerView.selectRow(0, inComponent: 0, animated: true)
+        startTermPickerView.reloadAllComponents()
+        selectedTermString = pickerViewData[startTermPickerView.selectedRowInComponent(0)]
     }
 
 
